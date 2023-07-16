@@ -63,6 +63,20 @@
     {
       "type": "lldb",
       "request": "launch",
+      "name": "Debug executable 'print-display'",
+      "cargo": {
+        "args": ["build", "--bin=print-display", "--package=rust-by-example"],
+        "filter": {
+          "name": "print-display",
+          "kind": "bin"
+        }
+      },
+      "args": [],
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
       "name": "Debug executable 'primitives'",
       "cargo": {
         "args": ["build", "--bin=primitives", "--package=rust-by-example"],

@@ -22,6 +22,10 @@ name="print-debug"
 path="src/print-debug.rs"
 
 [[bin]]
+name="print-display"
+path="src/print-display.rs"
+
+[[bin]]
 name="primitives"
 path="src/primitives.rs"
 
