@@ -17,4 +17,8 @@ path="src/hello2.rs"
 name="primitives"
 path="src/primitives.rs"
 
+[[bin]]
+name="literals-and-operators"
+path="src/literals-and-operators.rs"
+
 [dependencies]

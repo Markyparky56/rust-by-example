@@ -3,7 +3,7 @@
     // Hover to view descriptions of existing attributes.
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
-    "configurations": [
+    "configurations": [        
         {
             "type": "lldb",
             "request": "launch",
@@ -61,21 +61,39 @@
         {
             "type": "lldb",
             "request": "launch",
-            "name": "Debug unit tests in executable 'rust-by-example'",
+            "name": "Debug executable 'literals-and-operators'",
             "cargo": {
                 "args": [
-                    "test",
-                    "--no-run",
-                    "--bin=rust-by-example",
+                    "build",
+                    "--bin=literals-and-operators",
                     "--package=rust-by-example"
                 ],
                 "filter": {
-                    "name": "rust-by-example",
+                    "name": "literals-and-operators",
                     "kind": "bin"
                 }
             },
             "args": [],
             "cwd": "${workspaceFolder}"
-        }
+        },
+        // {
+        //     "type": "lldb",
+        //     "request": "launch",
+        //     "name": "Debug unit tests in executable 'rust-by-example'",
+        //     "cargo": {
+        //         "args": [
+        //             "test",
+        //             "--no-run",
+        //             "--bin=rust-by-example",
+        //             "--package=rust-by-example"
+        //         ],
+        //         "filter": {
+        //             "name": "rust-by-example",
+        //             "kind": "bin"
+        //         }
+        //     },
+        //     "args": [],
+        //     "cwd": "${workspaceFolder}"
+        // }
     ]
 }
