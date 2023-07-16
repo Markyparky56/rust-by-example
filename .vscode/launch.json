@@ -77,6 +77,20 @@
     {
       "type": "lldb",
       "request": "launch",
+      "name": "Debug executable 'print-list'",
+      "cargo": {
+        "args": ["build", "--bin=print-list", "--package=rust-by-example"],
+        "filter": {
+          "name": "print-list",
+          "kind": "bin"
+        }
+      },
+      "args": [],
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
       "name": "Debug executable 'primitives'",
       "cargo": {
         "args": ["build", "--bin=primitives", "--package=rust-by-example"],

@@ -26,6 +26,10 @@ name="print-display"
 path="src/print-display.rs"
 
 [[bin]]
+name="print-list"
+path="src/print-list.rs"
+
+[[bin]]
 name="primitives"
 path="src/primitives.rs"
 
