@@ -14,11 +14,23 @@ name="hello2"
 path="src/hello2.rs"
 
 [[bin]]
+name="print"
+path="src/print.rs"
+
+[[bin]]
+name="print-debug"
+path="src/print-debug.rs"
+
+[[bin]]
 name="primitives"
 path="src/primitives.rs"
 
 [[bin]]
 name="literals-and-operators"
 path="src/literals-and-operators.rs"
+
+[[bin]]
+name="tuples"
+path="src/tuples.rs"
 
 [dependencies]

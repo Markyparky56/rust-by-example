@@ -1,99 +1,129 @@
 {
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
-    "version": "0.2.0",
-    "configurations": [        
-        {
-            "type": "lldb",
-            "request": "launch",
-            "name": "Debug executable 'hello'",
-            "cargo": {
-                "args": [
-                    "build",
-                    "--bin=hello",
-                    "--package=rust-by-example"
-                ],
-                "filter": {
-                    "name": "hello",
-                    "kind": "bin"
-                }
-            },
-            "args": [],
-            "cwd": "${workspaceFolder}"
-        },
-        {
-            "type": "lldb",
-            "request": "launch",
-            "name": "Debug executable 'hello2'",
-            "cargo": {
-                "args": [
-                    "build",
-                    "--bin=hello2",
-                    "--package=rust-by-example"
-                ],
-                "filter": {
-                    "name": "hello2",
-                    "kind": "bin"
-                }
-            },
-            "args": [],
-            "cwd": "${workspaceFolder}"
-        },
-        {
-            "type": "lldb",
-            "request": "launch",
-            "name": "Debug executable 'primitives'",
-            "cargo": {
-                "args": [
-                    "build",
-                    "--bin=primitives",
-                    "--package=rust-by-example"
-                ],
-                "filter": {
-                    "name": "primitives",
-                    "kind": "bin"
-                }
-            },
-            "args": [],
-            "cwd": "${workspaceFolder}"
-        },
-        {
-            "type": "lldb",
-            "request": "launch",
-            "name": "Debug executable 'literals-and-operators'",
-            "cargo": {
-                "args": [
-                    "build",
-                    "--bin=literals-and-operators",
-                    "--package=rust-by-example"
-                ],
-                "filter": {
-                    "name": "literals-and-operators",
-                    "kind": "bin"
-                }
-            },
-            "args": [],
-            "cwd": "${workspaceFolder}"
-        },
-        // {
-        //     "type": "lldb",
-        //     "request": "launch",
-        //     "name": "Debug unit tests in executable 'rust-by-example'",
-        //     "cargo": {
-        //         "args": [
-        //             "test",
-        //             "--no-run",
-        //             "--bin=rust-by-example",
-        //             "--package=rust-by-example"
-        //         ],
-        //         "filter": {
-        //             "name": "rust-by-example",
-        //             "kind": "bin"
-        //         }
-        //     },
-        //     "args": [],
-        //     "cwd": "${workspaceFolder}"
-        // }
-    ]
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Debug executable 'hello'",
+      "cargo": {
+        "args": ["build", "--bin=hello", "--package=rust-by-example"],
+        "filter": {
+          "name": "hello",
+          "kind": "bin"
+        }
+      },
+      "args": [],
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Debug executable 'hello2'",
+      "cargo": {
+        "args": ["build", "--bin=hello2", "--package=rust-by-example"],
+        "filter": {
+          "name": "hello2",
+          "kind": "bin"
+        }
+      },
+      "args": [],
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Debug executable 'print'",
+      "cargo": {
+        "args": ["build", "--bin=print", "--package=rust-by-example"],
+        "filter": {
+          "name": "print",
+          "kind": "bin"
+        }
+      },
+      "args": [],
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Debug executable 'print-debug'",
+      "cargo": {
+        "args": ["build", "--bin=print-debug", "--package=rust-by-example"],
+        "filter": {
+          "name": "print-debug",
+          "kind": "bin"
+        }
+      },
+      "args": [],
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Debug executable 'primitives'",
+      "cargo": {
+        "args": ["build", "--bin=primitives", "--package=rust-by-example"],
+        "filter": {
+          "name": "primitives",
+          "kind": "bin"
+        }
+      },
+      "args": [],
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Debug executable 'literals-and-operators'",
+      "cargo": {
+        "args": [
+          "build",
+          "--bin=literals-and-operators",
+          "--package=rust-by-example"
+        ],
+        "filter": {
+          "name": "literals-and-operators",
+          "kind": "bin"
+        }
+      },
+      "args": [],
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Debug executable 'tuples'",
+      "cargo": {
+        "args": ["build", "--bin=tuples", "--package=rust-by-example"],
+        "filter": {
+          "name": "tuples",
+          "kind": "bin"
+        }
+      },
+      "args": [],
+      "cwd": "${workspaceFolder}"
+    }
+    // {
+    //     "type": "lldb",
+    //     "request": "launch",
+    //     "name": "Debug unit tests in executable 'rust-by-example'",
+    //     "cargo": {
+    //         "args": [
+    //             "test",
+    //             "--no-run",
+    //             "--bin=rust-by-example",
+    //             "--package=rust-by-example"
+    //         ],
+    //         "filter": {
+    //             "name": "rust-by-example",
+    //             "kind": "bin"
+    //         }
+    //     },
+    //     "args": [],
+    //     "cwd": "${workspaceFolder}"
+    // }
+  ]
 }
