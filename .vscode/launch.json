@@ -1,0 +1,81 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'hello'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=hello",
+                    "--package=rust-by-example"
+                ],
+                "filter": {
+                    "name": "hello",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'hello2'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=hello2",
+                    "--package=rust-by-example"
+                ],
+                "filter": {
+                    "name": "hello2",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'primitives'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=primitives",
+                    "--package=rust-by-example"
+                ],
+                "filter": {
+                    "name": "primitives",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'rust-by-example'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=rust-by-example",
+                    "--package=rust-by-example"
+                ],
+                "filter": {
+                    "name": "rust-by-example",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}
