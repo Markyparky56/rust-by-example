@@ -1,3 +1,5 @@
+use std::fmt;
+
 // Tuples can be used as function arguments and as return values
 fn reverse(pair: (i32, bool)) -> (bool, i32) {
     // let can be used to bind the members of a tuple to variables
@@ -10,6 +12,22 @@ fn reverse(pair: (i32, bool)) -> (bool, i32) {
 // derive(Debug) tells the compiler to auto-generate a debug auto string when using the {:?} format string
 #[derive(Debug)]
 struct Matrix(f32, f32, f32, f32);
+
+impl fmt::Display for Matrix {
+    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
+        let x0y0 = self.0;
+        let x0y1 = self.1;
+        let x1y0 = self.2;
+        let x1y1 = self.3;
+        writeln!(f, "")?;
+        writeln!(f, "( {x0y0} {x1y0} )")?;
+        writeln!(f, "( {x0y1} {x1y1} )")
+    }
+}
+
+fn transpose(matrix: Matrix) -> Matrix {
+    Matrix(matrix.0, matrix.2, matrix.1, matrix.3)
+}
 
 fn main() {
     // A tuple with a bunch of different types
@@ -44,6 +62,12 @@ fn main() {
     let (a, b, c, d) = tuple;
     println!("{:?}, {:?}, {:?}, {:?}", a, b, c, d);
 
-    // let matrix = Matrix(1.1, 1.2, 2.1, 2.2);
-    // println!("{:?}", matrix);
+    let matrix = Matrix(1.1, 1.2, 2.1, 2.2);
+    println!("Matrix:");
+    println!("Display: {}", matrix);
+    println!("Debug: {:?}", matrix);
+    let transposed = transpose(matrix);
+    println!("Tranpose:");
+    println!("Display: {}", transposed);
+    println!("Debug: {:?}", transposed);
 }
